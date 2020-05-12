@@ -13,7 +13,7 @@ Specifications:
 * Health checks (readiness and liveness)   
 * Graceful shutdown on interrupt signals
 * File watcher for secrets and configmaps
-* Instrumented with Prometheus 
+* Instrumented with Prometheus  
 * Tracing with Istio and Jaeger
 * Linkerd service profile
 * Structured logging with zap 
