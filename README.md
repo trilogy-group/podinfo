@@ -21,7 +21,7 @@ Specifications:
 * Fault injection (random errors and latency)
 * Swagger docs
 * Helm and Kustomize installers
-* End-to-End testing with Kubernetes Kind and Helm  
+* End-to-End testing with Kubernetes Kind and Helm   
 * Kustomize testing with GitHub Actions and Open Policy Agent  
 
  
