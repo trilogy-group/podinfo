@@ -15,10 +15,6 @@ RUN GIT_COMMIT=$(git rev-list -1 HEAD) && \
     -X github.com/trilogy-group/podinfo/pkg/version.REVISION=${GIT_COMMIT}" \
     -a -o bin/podinfo cmd/podinfo/*
 
-RUN GIT_COMMIT=$(git rev-list -1 HEAD) && \
-    CGO_ENABLED=0 GOOS=linux go build -ldflags "-s -w \
-    -X github.com/trilogy-group/podinfo/pkg/version.REVISION=${GIT_COMMIT}" \
-    -a -o bin/podcli cmd/podcli/*
 
 FROM alpine:3.11
 
@@ -30,7 +26,6 @@ RUN addgroup -S app \
 WORKDIR /home/app
 
 COPY --from=builder /podinfo/bin/podinfo .
-COPY --from=builder /podinfo/bin/podcli /usr/local/bin/podcli
 COPY ./ui ./ui
 RUN chown -R app:app ./
 
