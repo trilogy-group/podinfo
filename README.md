@@ -23,7 +23,7 @@ Specifications:
 * Helm and Kustomize installers
 * End-to-End testing with Kubernetes Kind and Helm   
 * Kustomize testing with GitHub Actions and Open Policy Agent  
-
+ 
  
 Web API:
 
