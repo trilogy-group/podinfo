@@ -14,7 +14,7 @@ Specifications:
 * Graceful shutdown on interrupt signals
 * File watcher for secrets and configmaps   
 * Instrumented with Prometheus    
-* Tracing with Istio and Jaeger
+* Tracing with Istio and Jaeger 
 * Linkerd service profile  
 * Structured logging with zap   
 * 12-factor app with viper  
