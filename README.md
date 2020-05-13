@@ -91,7 +91,7 @@ helm upgrade --install --wait backend \
 podinfo/podinfo
 ```
 
-Kustomize:
+Kustomize: 
  
 ```bash 
 kubectl apply -k github.com/stefanprodan/podinfo//kustomize
