@@ -6,10 +6,6 @@ WORKDIR /podinfo
 
 COPY . .
 
-RUN go mod download
-
-RUN go build -v ./...
-
 RUN GIT_COMMIT=$(git rev-list -1 HEAD) && \
     CGO_ENABLED=0 GOOS=linux go build -ldflags "-s -w \
     -X github.com/trilogy-group/podinfo/pkg/version.REVISION=${GIT_COMMIT}" \

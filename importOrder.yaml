@@ -16,7 +16,7 @@ build:
     image: ""
     toolchainVersion: Go 1.14
     tool: Go
-    buildCommand: go build -v  ./...
+    buildCommand: echo 'noop'
 test:
     utFramework: testing
     preTestCommand: echo noop
