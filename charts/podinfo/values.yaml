@@ -57,7 +57,7 @@ linkerd:
     enabled: false
 
 serviceMonitor:
-  enabled: false
+  enabled: true
   interval: 15s
 
 ingress:
