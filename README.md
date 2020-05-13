@@ -93,7 +93,7 @@ podinfo/podinfo
 
 Kustomize:
  
-```bash
+```bash 
 kubectl apply -k github.com/stefanprodan/podinfo//kustomize
 ```
 
