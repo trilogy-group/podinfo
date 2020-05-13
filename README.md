@@ -16,7 +16,7 @@ Specifications:
 * Instrumented with Prometheus    
 * Tracing with Istio and Jaeger  
 * Linkerd service profile  
-* Structured logging with zap   
+* Structured logging with zap    
 * 12-factor app with viper  
 * Fault injection (random errors and latency)
 * Swagger docs  
