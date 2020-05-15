@@ -1,0 +1,20 @@
+version: v1
+productName: podinfo
+buildEnvVars: null
+build:
+    techStack: Go
+    os: Ubuntu 18.04
+    image: ""
+    toolchainVersion: Go 1.14
+    tool: Go
+    buildCommand: echo 'noop'
+test:
+    preTestCommand: echo noop
+    testCommand: echo noop
+package:
+    packageCommand: echo noop
+    artifactDir: bin
+repoType: Deployable service
+release:
+    targetChartFile: podinfo
+    dockerized: true
