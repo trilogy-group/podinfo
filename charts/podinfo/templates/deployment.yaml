@@ -27,7 +27,7 @@ spec:
         prometheus.io/port: "{{ .Values.service.httpPort }}"
     spec:
       terminationGracePeriodSeconds: 30
-      {{- if .Values.serviceAccount.enabled }}
+      {{- if .Values.serviceAccountName.enabled }}
       serviceAccountName: {{ template "podinfo.serviceAccountName" . }}
       {{- end }}
       containers:
